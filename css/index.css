@@ -141,7 +141,7 @@ mark {
     grid-template-areas:
     'pic pic'
     'left right';
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 #friend2 img {
     grid-area: pic;
