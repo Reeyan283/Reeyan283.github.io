@@ -117,6 +117,7 @@ mark {
     font-size: 0.625em;
     line-height: 1.5;
     text-align: center;
+    font-weight: normal;
 }
 #friends  img {
     height: 7.5rem;
@@ -135,7 +136,24 @@ mark {
 #friend2 {
     grid-area: friend2;
     margin: 0 5px;
+
+    display: grid;
+    grid-template-areas:
+    'pic pic'
+    'left right';
 }
+#friend2 img {
+    grid-area: pic;
+}
+#friend #left {
+    grid-area: left;
+    text-align: center;
+}
+#friend #right {
+    grid-area: right;
+    text-align: center;
+}
+
 #friend3 {
     grid-area: friend3;
     margin: 0 5px;
