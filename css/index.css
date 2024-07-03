@@ -1,0 +1,144 @@
+.main {
+    font-family: Poppins;
+
+    font-size: 1.2em;
+    color: white;
+
+    background-color: rgb(33, 22, 21);
+    border: 2px solid rgb(129, 120, 106);
+    border-top: none;
+
+    display: grid;
+    grid-template-areas:
+    'findMe findMe briefAbout briefAbout briefAbout briefAbout'
+    'song song song song song song'
+    'video video video favourites favourites favourites'
+    'byf byf friends friends friends friends';
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.main table {
+    letter-spacing: 0rem;
+    font-size: 0.625em;
+    line-height: 1.375;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    border-collapse: collapse;
+    border: 1; 
+}
+mark {
+    background-color: rgb(140, 89, 52);
+    color: white;
+}
+
+#findMe {
+    grid-area: findMe;
+    padding-left: 5px;
+    border-bottom: 2px solid rgb(129, 120, 106);
+}
+
+#findMe table {
+    width: 100%;
+}
+
+#findMe table tr {
+    border-top: solid 1px rgb(48, 52, 54);
+}
+
+#briefAbout {
+    grid-area: briefAbout;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid rgb(129, 120, 106);
+}
+#song {
+    grid-area: song;
+    text-align: center;
+
+    background-image: linear-gradient(rgb(42, 46, 47) 0%, rgb(21, 23, 24) 100%);
+    border: 1px solid rgb(122, 113, 100);
+
+    letter-spacing: 0rem;
+    width: 100%;
+    font-size: 0.75em;
+    line-height: 1.375;
+
+}
+#video {
+    grid-area: video;
+    padding-left: 5px;
+}
+#video h2 {
+    letter-spacing: 0rem;
+    font-size: 0.75em;
+    line-height: 1.375;
+
+    text-align: right;
+
+    margin: 0;    
+}
+#favourites {
+    grid-area: favourites;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#favourites table tr {
+    border-top: solid 2px #47494b;
+}
+
+#byf {
+    grid-area: byf;
+    width: 50%;
+    padding-top: 1em;
+    padding-left: 5px;
+}
+#byf table tr {
+    border-top: solid 1px rgb(48, 52, 54);
+}
+
+#friends {
+    grid-area: friends;
+    display: grid;
+    grid-template-areas:
+    'title title title'
+    'friend1 friend2 friend2'
+    'friend3 friend4 friend5';
+    grid-template-columns: repeat(3, 1fr);
+
+    letter-spacing: 0rem;
+    width: 100%;
+    font-size: 0.625em;
+    line-height: 1.5;
+    text-align: center;
+}
+#friends  img {
+    height: 7.5rem;
+}
+#friendTitle {
+    grid-area: title;
+    text-align: center;
+
+    font-size: 1.25em;
+
+}
+#friend1 {
+    grid-area: friend1;
+}
+#friend2 {
+    grid-area: friend2;
+}
+#friends2 {
+    span
+}
+#friend3 {
+    grid-area: friend3;
+}
+#friend4 {
+    grid-area: friend4;
+}
+#friend5 {
+    grid-area: friend5;
+}
