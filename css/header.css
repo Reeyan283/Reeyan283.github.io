@@ -11,6 +11,7 @@ html {
 @media (max-width : 500px) {
     html {
         font-size: .75em;
+        
     }
 }
 
@@ -116,7 +117,7 @@ ul h1 {
     text-align: left;
     width: 70%;
 }
-#addrsBarText2 img {
+#addrsBarText2 svg {
     height: 1.5em;
     width: 1.5em;
 
@@ -127,7 +128,7 @@ ul h1 {
 }
 #addrsBarIcons {
     display: flex;
-    gap: 1vw; 
+    gap: 1em; 
     font-size: 0.625em;
 }
 #addrsBarIcons img {
