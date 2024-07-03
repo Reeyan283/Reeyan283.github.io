@@ -69,6 +69,7 @@ mark {
 #video {
     grid-area: video;
     padding-left: 5px;
+    border-top: 2px solid rgb(129, 120, 106);
 }
 #video h2 {
     letter-spacing: 0rem;
@@ -84,6 +85,8 @@ mark {
 
     padding-left: 5px;
     padding-right: 5px;
+
+    border-top: 2px solid rgb(129, 120, 106);
 }
 #favourites table tr {
     border-top: solid 2px #47494b;
@@ -93,6 +96,7 @@ mark {
     grid-area: byf;
     width: 50%;
     padding-top: 1em;
+    padding-left: 5px;
 }
 #byf table tr {
     border-top: solid 1px rgb(48, 52, 54);
@@ -125,16 +129,21 @@ mark {
 }
 #friend1 {
     grid-area: friend1;
+    margin: 0 5px;
 }
 #friend2 {
     grid-area: friend2;
+    margin: 0 5px;
 }
 #friend3 {
     grid-area: friend3;
+    margin: 0 5px;
 }
 #friend4 {
     grid-area: friend4;
+    margin: 0 5px;
 }
 #friend5 {
     grid-area: friend5;
+    margin: 0 5px;
 }
