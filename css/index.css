@@ -93,7 +93,6 @@ mark {
     grid-area: byf;
     width: 50%;
     padding-top: 1em;
-    padding-left: 5px;
 }
 #byf table tr {
     border-top: solid 1px rgb(48, 52, 54);
@@ -129,9 +128,6 @@ mark {
 }
 #friend2 {
     grid-area: friend2;
-}
-#friends2 {
-    span
 }
 #friend3 {
     grid-area: friend3;
