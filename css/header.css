@@ -117,15 +117,6 @@ ul h1 {
     text-align: left;
     width: 70%;
 }
-#addrsBarText2 svg {
-    height: 1.5em;
-    width: 1.5em;
-
-    margin-left: auto;
-    margin-right: 0.5em;
-
-    justify-self: flex-end;
-}
 #addrsBarIcons {
     display: flex;
     gap: 1em; 
