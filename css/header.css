@@ -6,6 +6,8 @@ html {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+
+    font-size: 1.4em;
 }
 
 @media (max-width : 500px) {
@@ -13,6 +15,12 @@ html {
         font-size: .75em;
         
     }
+}
+@media (max-width : 1920px) {
+    html {
+        font-size: 1em;
+    }
+
 }
 
 body {
