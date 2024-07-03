@@ -119,7 +119,6 @@ ul h1 {
 }
 #addrsBarIcons {
     display: flex;
-    gap: 1em; 
     font-size: 0.625em;
 }
 #addrsBarIcons img {
