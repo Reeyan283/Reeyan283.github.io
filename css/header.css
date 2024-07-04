@@ -25,6 +25,15 @@ html {
     }
 }
 
+@media (max-width : 500px) {
+    html {
+        font-size: .9em;
+
+        margin-top: -2em;
+        
+    }
+}
+
 body {
     width: 90vw;
     max-width: 40rem;

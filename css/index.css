@@ -64,10 +64,17 @@ mark {
     height: 10.6rem;
 }
 
-@media (max-width : 500px) {
+@media (max-width : 360px) {
     #findMe img,
     #briefAbout img {
             height: 5rem;
+        }
+}
+
+@media (max-width : 500px) {
+    #findMe img,
+    #briefAbout img {
+            height: 8rem;
         }
 }
 
@@ -83,7 +90,7 @@ mark {
     line-height: 1.375;
 
 }
-@media (max-width : 500px) {
+@media (max-width : 360px) {
     #song {
         font-size: 0.625em;
     }
@@ -121,9 +128,14 @@ mark {
 #favourites img {
     height: 4.6rem;
 }
-@media (max-width : 500px) {
+@media (max-width : 360px) {
     #favourites img {
         height: 2.5rem;
+    }
+}
+@media (max-width : 500px) {
+    #favourites img {
+        height: 4.5rem;
     }
 }
 
@@ -161,9 +173,14 @@ mark {
 #friends  img {
     height: 7.5rem;
 }
-@media (max-width : 500px) {
+@media (max-width : 360px) {
     #friends img {
         height: 4.5rem;
+    }
+}
+@media (max-width : 500px) {
+    #friends img {
+        height: 5rem;
     }
 }
 
