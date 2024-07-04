@@ -15,6 +15,7 @@
     'video video video favourites favourites favourites'
     'byf byf friends friends friends friends';
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
 }
 
 .main table {
@@ -49,12 +50,27 @@ mark {
     border-top: solid 1px rgb(48, 52, 54);
 }
 
+#findMe img {
+    height: 10.6rem;
+}
+
 #briefAbout {
     grid-area: briefAbout;
     padding-left: 5px;
     padding-right: 5px;
     border-bottom: 2px solid rgb(129, 120, 106);
 }
+#briefAbout img {
+    height: 10.6rem;
+}
+
+@media (max-width : 500px) {
+    #findMe img,
+    #briefAbout img {
+            height: 5rem;
+        }
+}
+
 #song {
     grid-area: song;
     text-align: center;
@@ -67,10 +83,20 @@ mark {
     line-height: 1.375;
 
 }
+@media (max-width : 500px) {
+    #song {
+        font-size: 0.625em;
+    }
+}
 #video {
     grid-area: video;
     padding-left: 5px;
     border-top: 2px solid rgb(129, 120, 106);
+}
+@media (max-width : 500px) {
+    #video iframe {
+        height: 10.5rem;
+    }
 }
 #video h2 {
     letter-spacing: 0rem;
@@ -92,6 +118,14 @@ mark {
 #favourites table tr {
     border-top: solid 2px #47494b;
 }
+#favourites img {
+    height: 4.6rem;
+}
+@media (max-width : 500px) {
+    #favourites img {
+        height: 2.5rem;
+    }
+}
 
 #byf {
     grid-area: byf;
@@ -101,6 +135,11 @@ mark {
 }
 #byf table tr {
     border-top: solid 1px rgb(48, 52, 54);
+}
+@media (max-width : 500px) {
+    #byf {
+        width: 90%;
+    }
 }
 
 #friends {
@@ -122,6 +161,12 @@ mark {
 #friends  img {
     height: 7.5rem;
 }
+@media (max-width : 500px) {
+    #friends img {
+        height: 4.5rem;
+    }
+}
+
 #friendTitle {
     grid-area: title;
     text-align: center;
