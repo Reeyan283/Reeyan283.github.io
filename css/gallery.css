@@ -1,7 +1,14 @@
 .main {
     display: grid;
     grid-template-areas: 
-        "hoco"
+        'mexico2023'
+        'meow2023'
+        'fall2023'
+        'thanks2023'
+        'christmas2024'
+        'valentine2024'
+        'senior2024'
+        'acpprom2024'
         ;
 
     background-color: rgb(33, 22, 21);
@@ -18,4 +25,23 @@
 .images img {
     width: 100%;
     object-fit: cover;
+}
+
+#mexico2023 {
+    grid-area: mexico2023;
+}
+#meow2023 {
+    grid-area: meow2023;
+}
+#thanks2023 {
+    grid-area: thanks2023;
+}
+#christmas2024 {
+    grid-area: christmas2024;
+}
+#senior2024 {
+    grid-area: senior2024;
+}
+#acpprom2024 {
+    grid-area: acpprom2024;
 }
