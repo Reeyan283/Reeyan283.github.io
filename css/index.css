@@ -158,10 +158,11 @@ mark {
     grid-area: friends;
     display: grid;
     grid-template-areas:
-    'title title title'
-    'friend1 friend2 friend2'
-    'friend3 friend4 friend5';
-    grid-template-columns: repeat(3, 1fr);
+    'title title title title title title'
+    '. lukas lukas lukas lukas .'
+    'kc kc mek mek jason jason'
+    '. ollie ollie june june .';
+    grid-template-columns: repeat(6, 1fr);
 
     letter-spacing: 0rem;
     width: 100%;
@@ -191,12 +192,12 @@ mark {
     font-size: 1.25em;
 
 }
-#friend1 {
-    grid-area: friend1;
+#ollie {
+    grid-area: ollie;
     margin: 0 5px;
 }
-#friend2 {
-    grid-area: friend2;
+#lukas {
+    grid-area: lukas;
     margin: 0 5px;
 
     display: grid;
@@ -205,27 +206,31 @@ mark {
     'left right';
     grid-template-columns: 50% 50%;
 }
-#friend2 img {
+#lukas img {
     grid-area: pic;
 }
-#friend #left {
+#lukas #left {
     grid-area: left;
     text-align: center;
 }
-#friend #right {
+#lukas #right {
     grid-area: right;
     text-align: center;
 }
 
-#friend3 {
-    grid-area: friend3;
+#kc {
+    grid-area: kc;
     margin: 0 5px;
 }
-#friend4 {
-    grid-area: friend4;
+#mek {
+    grid-area: mek;
     margin: 0 5px;
 }
-#friend5 {
-    grid-area: friend5;
+#jason {
+    grid-area: jason;
+    margin: 0 5px;
+}
+#june {
+    grid-area: june;
     margin: 0 5px;
 }

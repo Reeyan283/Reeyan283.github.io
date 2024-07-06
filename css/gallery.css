@@ -1,0 +1,21 @@
+.main {
+    display: grid;
+    grid-template-areas: 
+        "hoco"
+        ;
+
+    background-color: rgb(33, 22, 21);
+    border: 2px solid rgb(129, 120, 106);
+    border-top: none;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.images img {
+    width: 100%;
+    object-fit: cover;
+}
