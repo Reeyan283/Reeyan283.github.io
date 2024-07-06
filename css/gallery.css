@@ -1,6 +1,11 @@
 .main {
     display: grid;
     grid-template-areas: 
+        'friends2021'
+        'hoco2022'
+        'band'
+        'hoco2023'
+        'florida2023'
         'mexico2023'
         'meow2023'
         'fall2023'
@@ -27,25 +32,39 @@
     width: 100%;
     object-fit: cover;
 }
-
-#mexico2023 {
+.gallery #friends2021 {
+    grid-area: friends2021;
+}
+.gallery #band {
+    grid-area: band;
+}
+.gallery #mexico2023 {
     grid-area: mexico2023;
 }
-#meow2023 {
+.gallery #meow2023 {
     grid-area: meow2023;
 }
-#thanks2023 {
+.gallery #thanks2023 {
     grid-area: thanks2023;
 }
-#christmas2024 {
+.gallery #christmas2024 {
     grid-area: christmas2024;
 }
-#senior2024 {
+.gallery #senior2024 {
     grid-area: senior2024;
 }
-#acpprom2024 {
+.gallery #acpprom2024 {
     grid-area: acpprom2024;
 }
-#chsprom2024 {
+.gallery #chsprom2024 {
     grid-area: chsprom2024;
+}
+.gallery #hoco2022 {
+    grid-area: hoco2022;
+}
+.gallery #hoco2023 {
+    grid-area: hoco2023;
+}
+.gallery #florida2023 {
+    grid-area: florida2023;
 }

@@ -13,8 +13,9 @@ def compress_image(image_path, output_path, quality):
         # Save as JPEG
         image.save(output_path, 'JPEG', optomize=True, quality=quality)
 
-for file in os.listdir('full'):
+for file in os.listdir('backup'):
     image_path = f'backup/{file}'
-    output_path = f'100/{file}'
+    output_path = f'full/{file}'
+    output_path2 = f'100/{file}'
     compress_image(image_path, output_path, quality=95)
-    #resize_image(image_path, output_path, size=250, quality=95)
+    resize_image(image_path, output_path2, size=250, quality=95)
