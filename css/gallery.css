@@ -9,6 +9,7 @@
         'valentine2024'
         'senior2024'
         'acpprom2024'
+        'chsprom2024'
         ;
 
     background-color: rgb(33, 22, 21);
@@ -44,4 +45,7 @@
 }
 #acpprom2024 {
     grid-area: acpprom2024;
+}
+#chsprom2024 {
+    grid-area: chsprom2024;
 }
