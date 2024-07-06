@@ -59,10 +59,20 @@
         </div>
 
         <div class="main"> 
-            <div class="review" id="Reeyan">
-                <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
-                    <span class="authorName">Reeyan Choudhury</span>
+            <div class="sort">
+                <label for="sortOptions">Sort By:</label>
+                <select id="sortOptions">
+                    <option value="default">???</option>
+                    <option value="a">Closeness</option>
+                    <option value="b">Taste in Music</option>
+                    <option value="c">Taste in Women</option>
+                </select>
+            </div>
+
+            <div class="review">
+                <div class="author" id="reeyan"> 
+                    <img src="../assets/me.jpg" class="authorImg">
+                    <span class="authorName">Reeyan</span>
                 </div>
                 <div class="rating"><i data-star="4.5"></i></div>
                 <div class="reviewBody">
@@ -70,10 +80,21 @@
                 </div>
             </div>
 
+            <div class="review" id="lukas">
+                <div class="author"> 
+                    <img src="../assets/lukas.jpg" class="authorImg">
+                    <span class="authorName">Lukas</span>
+                </div>
+                <div class="rating"><i data-star="1.0"></i></div>
+                <div class="reviewBody">
+                    I think mines defective??? It's supposed to protect me by fighting off bullies but recently mines been cutting itself and saying that it's no biary? I've had to take out several loans for their hospital bills. What does no biry mean and can I get a refund?
+                </div>
+            </div>
+
             <div class="review" id="kc">
                 <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
-                    <span class="authorName">KC</span>
+                    <img src="../assets/kc.png" class="authorImg">
+                    <span class="authorName">Kaycee</span>
                 </div>
                 <div class="rating"><i data-star="4.0"></i></div>
                 <div class="reviewBody">
@@ -81,20 +102,9 @@
                 </div>
             </div>
 
-            <div class="review" id="kc">
+            <div class="review" id="ollie">
                 <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
-                    <span class="authorName">KC</span>
-                </div>
-                <div class="rating"><i data-star="4.0"></i></div>
-                <div class="reviewBody">
-                    Love the product, seems well enough made and very durable in comparison to other additions. Product is very funny and has a proclivity for Asians and MILFS. I think this is one of the best products I’ve purchased so far, very high quality, but poor coping mechanisms, so that’s where they lost the one star. Overall, very good.
-                </div>
-            </div>
-
-            <div class="review">
-                <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
+                    <img src="../assets/ollie.png" class="authorImg">
                     <span class="authorName">Ollie</span>
                 </div>
                 <div class="rating"><i data-star2="6.9"></i></div>
@@ -103,9 +113,9 @@
                 </div>
             </div>
 
-            <div class="review">
+            <div class="review" id="june">
                 <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
+                    <img src="../assets/jason.png" class="authorImg">
                     <span class="authorName">June</span>
                 </div>
                 <div class="rating"><i data-star="5"></i></div>
@@ -114,10 +124,10 @@
                 </div>
             </div>
 
-            <div class="review">
+            <div class="review" id="mek">
                 <div class="author"> 
-                    <img src="assets/author.png" class="authorImg">
-                    <span class="authorName">Mek</span>
+                    <img src="../assets/kenny.png" class="authorImg">
+                    <span class="authorName">Mekenna</span>
                 </div>
                 <div class="rating"><i data-star="4.75"></i></div>
                 <div class="reviewBody">
@@ -126,4 +136,56 @@
             </div>
         </div>
     </body>
+
+    <script>
+        document.getElementById('sortOptions').addEventListener('change', function() {
+            const option = this.value;
+            const reviewsContainer = document.querySelector('.main');
+
+            if (option === 'a') {
+                reviewsContainer.style.gridTemplateAreas = `
+                    'sort'
+                    'lukas'
+                    'kc'
+                    'mek'
+                    'ollie'
+                    'reeyan'
+                    'june'
+                `;
+            } else if (option === 'b') {
+                // Define grid-template-areas for Option B
+                reviewsContainer.style.gridTemplateAreas = `
+                    'sort'
+                    'mek'
+                    'lukas'
+                    'reeyan'
+                    'ollie'
+                    'june'
+                    'kc'
+                `;
+            } else if (option === 'c') {
+                // Define grid-template-areas for Option C
+                reviewsContainer.style.gridTemplateAreas = `
+                    'sort'
+                    'ollie'
+                    'reeyan'
+                    'june'
+                    'lukas'
+                    'kc'
+                    'mek'
+                `;
+            } else {
+                // Default grid-template-areas
+                reviewsContainer.style.gridTemplateAreas = `
+                    'sort'
+                    'mek'
+                    'lukas'
+                    'ollie'
+                    'kc'
+                    'reeyan'
+                    'june'
+                `;
+            }
+        });
+    </script>
 </html>

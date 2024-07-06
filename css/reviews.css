@@ -3,6 +3,25 @@
     border: 2px solid rgb(129, 120, 106);
     border-top: none;
     padding-top: 1rem;
+
+    display: grid;
+    grid-template-areas: 
+        'sort'
+        'mek'
+        'lukas'
+        'ollie'
+        'kc'
+        'reeyan'
+        'june'
+    ;
+}
+
+.main .sort {
+    grid-area: sort;
+    float: right;
+    margin-left: auto;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
 }
 
 .main .review {
@@ -17,12 +36,13 @@
 .main .review .author {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .main .review .author .authorImg {
     grid-area: picture;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
 
     float: left;
 }
@@ -33,6 +53,7 @@
     font-weight: bold;
     text-align: left;
     margin-right: auto;
+
 }
 
 .main .review .rating {
@@ -48,6 +69,26 @@
     font-weight: bold;
     text-align: left;
 }
+
+#reeyan {
+    grid-area: reeyan;
+}
+#lukas {
+    grid-area: lukas;
+}
+#kc {
+    grid-area: kc;
+}
+#ollie {
+    grid-area: ollie;
+}
+#june {
+    grid-area: june;
+}
+#mek {
+    grid-area: mek;
+}
+
 
 [data-star] {
     text-align:left;

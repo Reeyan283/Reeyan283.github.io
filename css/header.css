@@ -2,11 +2,12 @@ html {
     background-color: black;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
     font-size: 1.4em;
-    min-height: 100vh;
+
+    margin-top: 1em;
 }
 
 @media (max-width : 1920px) {
@@ -20,7 +21,6 @@ html {
     html {
         font-size: .9em;
 
-        margin-top: -1em;
         
     }
 }
@@ -29,7 +29,6 @@ html {
     html {
         font-size: .75em;
 
-        margin-top: -.5em;
         
     }
 }
